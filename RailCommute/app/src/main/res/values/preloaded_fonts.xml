@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth_bold</item>
+        <item>@font/assistant</item>
+        <item>@font/assistant_light</item>
+        <item>@font/biryani</item>
+        <item>@font/cabin</item>
+        <item>@font/cambay</item>
+        <item>@font/catamaran</item>
+        <item>@font/comfortaa</item>
+        <item>@font/maven_pro</item>
+        <item>@font/metrophobic</item>
+        <item>@font/montserrat_bold</item>
+    </array>
+</resources>

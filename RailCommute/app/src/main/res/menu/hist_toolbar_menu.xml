@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/SortBy"
+        android:title="Sort By"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/SortByDate"
+                android:title="Date"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/SortBySt"
+                android:title="Station"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/SortByTr"
+                android:title="Train"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/clear"
+        android:title="Clear History"
+        app:showAsAction="never"/>
+
+</menu>

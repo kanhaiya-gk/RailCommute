@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RailCommute</string>
+    <string name="source_code">Enter Station Name / Code</string>
+    <string name="destination_code">Enter Station Name / Code</string>
+    <string name="heading">Train Between Stations</string>
+    <string name="train_search">Search Trains</string>
+    <string name="enter_source">Enter Source</string>
+    <string name="enter_destination">Enter Destination</string>
+    <string name="date">Date</string>
+    <string name="title_activity_trains_list">trains_list</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="5dp"
+    android:layout_margin="5dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/trainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Train-Express Name"
+            android:textColor="@color/congo_brown"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/trainId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/trainName"
+            android:text="Train-ID"
+            android:textColor="@color/congo_brown"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/boStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trainName"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/congo_brown"
+            android:text="Boarding Place"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/boDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boStation"
+            android:layout_marginTop="3dp"
+            android:text="Boarding Date"
+            android:textColor="@color/congo_brown"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/boTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boDate"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/congo_brown"
+            android:text="Boarding Time"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/desStation"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trainName"
+            android:textColor="@color/congo_brown"
+            android:layout_marginTop="5dp"
+            android:text="Dest Place"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/desDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desStation"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/congo_brown"
+            android:text="Boarding Date"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/desTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/desDate"
+            android:textColor="@color/congo_brown"
+            android:layout_marginTop="2dp"
+            android:text="Boarding Time"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/bookDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/desTime"
+            android:textColor="@color/sandrift"
+            android:layout_marginTop="5dp"
+            android:text="Booked On : "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/bookDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desTime"
+            android:layout_toRightOf="@+id/bookDT"
+            android:textColor="@color/sandrift"
+            android:layout_marginTop="5dp"
+            android:text="Date"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tic_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="700"
+            android:textColor="@color/green"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/costT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tic_cost"
+            android:layout_below="@+id/desTime"
+            android:textColor="@color/green"
+            android:layout_marginTop="5dp"
+            android:text="Rs. "
+            android:textSize="20dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trainName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/ArrLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_left"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/dotLine"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="8dp"
+                android:layerType="software"
+                android:src="@drawable/dotted"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ArrRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
